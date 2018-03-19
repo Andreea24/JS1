@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		<script>
+		/*doua numere daca sunt egale*/
+		function compara1(a, b){
+			if (a===b) {return true;}
+			else {return false;}
+							}
+		console.log(compara1(24,24));
+		console.log(compara1(24,789));
+		console.log(compara1("24",24));
+		
+		/*doua nr si returneaza -1 daca primul<al2lea, 0 daca sunt egale, 1 daca al2lea e mai mare*/
+		function compara2(a,b){
+			if (a<b) {return -1;}
+			else if (a===b) {return 0;}
+			else {return 1;}
+		}
+		console.log(compara2(3, 45));
+		console.log(compara2(11, 11));
+		console.log(compara2(17, 1));
+		console.log(compara2("abc", 1));
+		
+		/*max a doua numere*/
+		function max(a, b){
+			if (a>b) {return a;}
+			else{return b;}
+		}
+		console.log(max(3, 45));
+		console.log(max(-11, -2));
+		console.log(max(0, -2));
+		
+		/*min a doua nr*/
+		function min(a,b){
+			if (a<b) {return a;}
+			else{return b;}
+		}
+		console.log(min(3, 45));
+		console.log(min(-11, -2));
+		console.log(min(0, -2));
+		
+		/*suma a doua nr*/
+		function sum(a, b){
+			return a+b;
+		}
+		console.log(sum(11, 24));
+		console.log(sum(-2, 10));
+		
+		/*diferenta a doua nr*/
+		function dif(a, b){
+			return a-b;
+		}
+		console.log(dif(11, 24));
+		console.log(dif(-2, 10));
+		console.log(dif(25, 10));
+		
+		/*rezultatul impartirii INTEGER*/
+		function impINTEGER(a, b){
+			var x = a/b;
+		   return Math.floor(x);
+		}
+		console.log(impINTEGER(45, 21));
+		console.log(impINTEGER(11, 3));
+		
+		/*rezultatul impartirii FLOAT*/
+		function impFLOAT(a, b){
+			return a/b;
+		}
+		console.log(impFLOAT(45, 21));
+		console.log(impFLOAT(11, 3));
+		
+		/*restul impartirii*/
+		function rest(a, b){
+			return a%b;
+		}
+		console.log(rest(9, 2));
+		console.log(rest(11, 3));
+		console.log(rest(12, 3));
+		
+		/*din Miles/Gallon in Litri/100KM*/
+		function mpg(mpg){
+			var x = (((1 / mpg)*3.78541)/1.609344)*100;	
+			return x;
+		}
+		console.log(mpg(1));
+		
+		/* Celsius in Fahrenheit*/
+		function convertCF(celsius) 
+			{
+			  var fahrenheit = celsius * 9 / 5 + 32;
+			  console.log('din '+celsius+ ' celsius in ' +fahrenheit+' fahrenheit');
+			}
+			convertCF(30);
+			
+		/* Grade in Radiani*/
+		function convertGR(grade){
+			var radian = grade * Math.PI / 180;
+			console.log('din '+grade+ ' grade in ' +radian+ ' radiani');
+		
+		}
+		convertGR(90);
+		convertGR(45);
+		
+		/*suplimentul unui unghi*/
+		function supliment(x){
+			var a= 180-x;
+			return a;
+		}
+		console.log(supliment(60));
+		
+		/*complementul unui unghi*/
+		function complement(x){
+			var a= 90-x;
+			return a;
+		}
+		console.log(complement(60));
+		</script>
+    </head>
+    <body>
+
+	</body>
+</html>
